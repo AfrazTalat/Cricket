@@ -1,0 +1,99 @@
+body{
+    width: 100%;
+    height: 100%;
+    background-color: hsl(127, 7%, 48%);
+}
+.switch-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.switch {
+    margin: 5px;
+    position: relative;
+    width: 60px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #2196F3;
+    border-radius: 15px;
+    transition: 0.4s;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked + .slider {
+    left: 50%;
+}
+p{
+   position: relative;
+   left: 80px;
+   margin: 4px;
+   background-color: rgb(0, 233, 31);
+   border-radius: 5px;
+   width: 70px;
+   font-size: 20px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1 {
+    font-size: 36px;
+    animation: colorChange 2s infinite alternate, textScale 2s infinite alternate;
+}
+
+@keyframes colorChange {
+    0% {
+        color: red;
+    }
+    25% {
+        color: #FFA500; /* Orange */
+    }
+    50% {
+        color: #00FF00; /* Green */
+    }
+    75% {
+        color: #0000FF; /* Blue */
+    }
+    100% {
+        color: red;
+    }
+}
+
+@keyframes textScale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.Free{
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+button{
+    border-radius: 10px;
+    font-size: 20px;
+    color: blue;
+    background-color: aqua;
+}
